@@ -77,8 +77,8 @@ namespace Weather
                 if (w.success == "1")
                 {
                     label1.Text = DateTime.Now.ToString("HH:mm");
-                    label2.Text = w.result.week;
-                    label3.Text = w.result.weather_curr;
+                    label2.Text = w.result.realTime.week;
+                    label3.Text = w.result.realTime.wtNm;
                     label4.Text = w.result.temp_low + "C-" + w.result.temp_high + "C";
 
                     //…Ë÷√Õº∆¨

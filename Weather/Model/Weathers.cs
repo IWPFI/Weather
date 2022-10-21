@@ -36,13 +36,20 @@ namespace Weather.Model
         public string notice { get; set; }
     }
 
+    public class RealTime
+    {
+        public string week { get; set; }
+        public string wtNm { get; set; }
+        public string wtWindNm { get; set; }
+    }
+
     public class Result
     {
-        public string days { get; set; }
-        public string week { get; set; }
+        public string weaid { get; set; }
+        public string cityid { get; set; }
         public string weather_curr { get; set; }
         public string temp_high { get; set; }
         public string temp_low { get; set; }
-        public string citynm { get; set; }
+        public RealTime realTime { get; set; }
     }
 }
